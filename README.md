@@ -57,7 +57,7 @@ Now you have successfully generated a Certificate Signing Request (CSR) and can 
 
 
 
-<h2>Section 3: Converting Certificate Formats</h2>h2>
+<h2>Section 3: Converting Certificate Formats</h2>
 In this section, we will explore how to convert certificate formats using OpenSSL. Converting between formats is often necessary for compatibility with different systems or applications.
 
 1. To generate a self-signed certificate, run the following command:

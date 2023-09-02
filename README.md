@@ -10,7 +10,7 @@
 <p>Inside this repository, you'll find a comprehensive guide with step-by-step instructions, code samples, and practical examples. We'll use Kali Linux as our virtual environment, incorporating languages like Bash, OpenSSL commands, and relevant libraries. Whether you're a cybersecurity enthusiast or looking to enhance your digital security skills, this lab will equip you with valuable certificate management expertise using OpenSSL.</p>
 
 
-Section 1: Generating Public and Private Keys
+##Section 1: Generating Public and Private Keys
 
 In this section, we will generate an asymmetric RSA key pair using OpenSSL.
 

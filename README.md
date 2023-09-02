@@ -1,7 +1,7 @@
 <h1>OpenSSL Certificate Management Lab</h1>
 
 <h2>Lab Description:</h2>
-<p>Welcome to our OpenSSL certificate management lab on Kali Linux. In this hands-on experience, you'll dive into OpenSSL, a versatile tool for securing data. You'll learn how to create certificates, generate certificate signing requests, and convert certificate formats. OpenSSL is a vital resource for safeguarding digital information and ensuring secure communication.</p>
+<p>Welcome to our OpenSSL certificate management lab on Kali Linux. In this hands-on experience, you'll dive into OpenSSL, a versatile tool for securing data. You'll learn how to create certificates, generate certificate signing requests, and convert certificate formats. OpenSSL is a vital resource for protecting digial confidentiality.</p>
 
 <h2>About OpenSSL:</h2>
 <p>OpenSSL is an open-source cryptographic library that plays a crucial role in securing data, encrypting communication, and managing certificates. It supports various algorithms, formats, and protocols, making it an essential tool in the digital security toolbox.</p>

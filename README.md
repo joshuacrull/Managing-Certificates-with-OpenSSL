@@ -23,8 +23,10 @@ In this section, we will generate an asymmetric RSA key pair using OpenSSL.
    - openssl genrsa -out threathunter.key 2048
 
 3. To view the content of the private key you just generated, you can use the "cat" command:    
-   - cat threathunter.key  
-   ![Alt Text](images/1.png)
+   - cat threathunter.key
+  
+     
+![Alt Text](images/1.png)
 
 4. Next, we'll extract the corresponding public key from the private key. This public key will be used when generating a Certificate Signing Request (CSR) in a later section.    
    - openssl rsa -in threathunter.key -pubout -out threathunter_public.key

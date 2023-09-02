@@ -15,9 +15,9 @@ Section 1: Generating Public and Private Keys
 In this section, we will generate an asymmetric RSA key pair using OpenSSL.
 
 1. First, navigate to your Documents directory and create a new directory named "keys". This is where we will store our keys.    
-   cd Documents    
-   mkdir keys    
-   cd keys
+   - cd Documents -    
+   - mkdir keys -    
+   - cd keys -
 
 2. Now, let's generate an Asymmetric RSA key pair. The following command will create a private key named "corp.515support.com.key" with a key length of 2048 bits.    
    openssl genrsa -out corp.515support.com.key 2048

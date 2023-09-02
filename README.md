@@ -15,7 +15,7 @@
 
 <h2>Section 1: Generating Public and Private Keys</h2>
 
-<li><b>In this section, we will generate an asymmetric RSA key pair using OpenSSL. This pair includes a private key and a public key, which are essential for secure communication and certificate generation.</b></li><br />
+<b>In this section, we will generate an asymmetric RSA key pair using OpenSSL. This pair includes a private key and a public key, which are essential for secure communication and certificate generation.</b><br />
 <ol>
         <li><b>First, navigate to your "Documents" directory and create a new directory named "keys" if it doesn't already exist. This is where we will store our generated keys.</b></li>
         <code>cd Documents</code><br />

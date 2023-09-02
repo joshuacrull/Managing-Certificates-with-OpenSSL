@@ -13,7 +13,6 @@
 
 
 
-
 <h2>Section 1: Generating Public and Private Keys</h2>
 
     <li><b>In this section, we will generate an asymmetric RSA key pair using OpenSSL. This pair includes a private key and a public key, which are essential for secure communication and certificate generation.</b></li>

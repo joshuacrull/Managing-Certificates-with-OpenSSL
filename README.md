@@ -19,20 +19,20 @@ In this section, we will generate an asymmetric RSA key pair using OpenSSL.
    - mkdir keys     
    - cd keys 
 
-2. Now, let's generate an Asymmetric RSA key pair. The following command will create a private key named "corp.515support.com.key" with a key length of 2048 bits.    
-   - openssl genrsa -out corp.515support.com.key 2048
+2. Now, let's generate an Asymmetric RSA key pair. The following command will create a private key named "threathunter.key" with a key length of 2048 bits.    
+   - openssl genrsa -out threathunter.key 2048
 
 3. To view the content of the private key you just generated, you can use the "cat" command:    
-   - cat corp.515support.com.key
+   - cat threathunter.key
 
 4. Next, we'll extract the corresponding public key from the private key. This public key will be used when generating a Certificate Signing Request (CSR) in a later section.    
-   - openssl rsa -in corp.515support.com.key -pubout -out corp.515support.com_public.key
+   - openssl rsa -in threathunter.key -pubout -out threathunter_public.key
 
 5. To verify that both the private and public keys have been generated and saved successfully, you can list the files in the current directory:    
    - ls
 
 6. Finally, you can view the content of the public key using the "cat" command:    
-   - cat corp.515support.com_public.key
+   - cat threathunter_public.key
 
 You've now successfully generated an RSA key pair, obtained the private key, and extracted the public key. These keys are fundamental to secure communication and certificate management in OpenSSL.
 
@@ -44,14 +44,14 @@ In this section, we will create a Certificate Signing Request (CSR) using OpenSS
 
 1. To generate the CSR, use the following command:
    
-   - openssl req -new -key corp.515support.com.key -out corp.515support.com.csr
+   - openssl req -new -key threathunter.key -out threathunter.csr
 
 2. You can verify the certificate request with this command:
-   - openssl req -text -in corp.515support.com.csr -noout -verify
+   - openssl req -text -in threathunter.csr -noout -verify
 
 4. To view the CSR that would be sent to the certificate authority, use the following command:
    
-   - cat corp.515support.com.csr
+   - cat threathunter.csr
 
 Now you have successfully generated a Certificate Signing Request (CSR) and can review its content. The CSR is a crucial step in obtaining a digital certificate for your server or application.
 
@@ -62,11 +62,11 @@ In this section, we will explore how to convert certificate formats using OpenSS
 
 1. To generate a self-signed certificate, run the following command:
    
-   - openssl req -newkey rsa:2048 -nodes -keyout corp.515support.com.key -x509 -days 100 -out corp.515support.com.crt
+   - openssl req -newkey rsa:2048 -nodes -keyout threathunter.key -x509 -days 100 -out threathunter.crt
 
 2. To merge the ".key" and ".crt" files into a ".pfx" (PKCS #12) file, use this command:
    
-   - openssl pkcs12 -export -name "corp.515support.com" -out corp.515support.com.pfx -inkey corp.515support.com.key -in corp.515support.com.crt
+   - openssl pkcs12 -export -name "threathunter.com" -out threathunter.pfx -inkey threathunter.key -in threathunter.crt
 
 You've now learned how to generate a self-signed certificate and convert it into a different format (".pfx"). This flexibility in format conversion is valuable for various deployment scenarios and system compatibility.
 

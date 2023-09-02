@@ -35,7 +35,10 @@ In this section, we will generate an asymmetric RSA key pair using OpenSSL.
    - ls
 
 6. Finally, you can view the content of the public key using the "cat" command:    
-   - cat threathunter_public.key
+   - cat threathunter_public.key  
+
+
+![Alt Text](images/1.5.png)
 
 You've now successfully generated an RSA key pair, obtained the private key, and extracted the public key. These keys are fundamental to secure communication and certificate management in OpenSSL.
 

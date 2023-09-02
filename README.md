@@ -74,4 +74,42 @@ cd keys</code></pre>
 </body>
 
 
+
+
+
+<head>
+    <title>Generating a Certificate Signing Request (CSR)</title>
+</head>
+
+<body>
+
+<h2>Section 2: Generating a Certificate Signing Request (CSR)</h2>
+
+<p>In this section, we will create a Certificate Signing Request (CSR) using OpenSSL. A CSR is a request for a digital certificate that includes your public key and essential information about your organization.</p>
+
+<ol>
+    <li>
+        <p>To generate the CSR, use the following command:</p>
+
+        <pre><code>"Generating signing certificate" openssl req -new -key corp.515support.com.key -out corp.515support.com.csr</code></pre>
+    </li>
+
+    <li>
+        <p>You can verify the content of the CSR with this command:</p>
+
+        <pre><code>"Verify the certificate request" openssl req -text -in corp.515support.com.csr -noout -verify</code></pre>
+    </li>
+
+    <li>
+        <p>To view the CSR that would be sent to the certificate authority, use the following command:</p>
+
+        <pre><code>"Display the certificate signing request that would be sent to the certificate authority" cat corp.515support.com.csr</code></pre>
+    </li>
+</ol>
+
+<p>Now you have successfully generated a Certificate Signing Request (CSR) and can review its content. The CSR is a crucial step in obtaining a digital certificate for your server or application.</p>
+
+</body>
+
+
 </html>

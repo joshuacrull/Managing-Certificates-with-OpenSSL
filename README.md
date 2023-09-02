@@ -52,12 +52,19 @@ In this section, we will create a Certificate Signing Request (CSR) using OpenSS
    
    - openssl req -new -key threathunter.key -out threathunter.csr
 
+![Alt Text](images/2.png)
+
+
 2. You can verify the certificate request with this command:
    - openssl req -text -in threathunter.csr -noout -verify
 
-4. To view the CSR that would be sent to the certificate authority, use the following command:
+3. To view the CSR that would be sent to the certificate authority, use the following command:
    
-   - cat threathunter.csr
+   - cat threathunter.csr  
+
+
+![Alt Text](images/3.png)
+
 
 Now you have successfully generated a Certificate Signing Request (CSR) and can review its content. The CSR is a crucial step in obtaining a digital certificate for your server or application.
 
@@ -72,7 +79,11 @@ In this section, we will explore how to convert certificate formats using OpenSS
 
 2. To merge the ".key" and ".crt" files into a ".pfx" (PKCS #12) file, use this command:
    
-   - openssl pkcs12 -export -name "threathunter.com" -out threathunter.pfx -inkey threathunter.key -in threathunter.crt
+   - openssl pkcs12 -export -name "threathunter.com" -out threathunter.pfx -inkey threathunter.key -in threathunter.crt  
+
+
+![Alt Text](images/5.png)
+
 
 You've now learned how to generate a self-signed certificate and convert it into a different format (".pfx"). This flexibility in format conversion is valuable for various deployment scenarios and system compatibility.
 

@@ -2,7 +2,43 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>OpenSSL Certificate Management Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.4;
+        }
+
+        code {
+            background-color: #f5f5f5;
+            font-family: Consolas, monospace;
+            padding: 2px 4px;
+        }
+
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        ol {
+            list-style: decimal inside;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,15 +51,6 @@
 
 <h2>What's Inside:</h2>
 <p>Inside this repository, you'll find a comprehensive guide with step-by-step instructions, code samples, and practical examples. We'll use Kali Linux as our virtual environment, incorporating languages like Bash, OpenSSL commands, and relevant libraries. Whether you're a cybersecurity enthusiast or looking to enhance your digital security skills, this lab will equip you with valuable certificate management expertise using OpenSSL.</p>
-
-</body>
-
-
-<head>
-    <title>Generating Public and Private Keys</title>
-</head>
-
-<body>
 
 <h2>Section 1: Generating Public and Private Keys</h2>
 
@@ -71,18 +98,6 @@ cd keys</code></pre>
 
 <p>You've now successfully generated an RSA key pair, obtained the private key, and extracted the public key. These keys are fundamental to secure communication and certificate management in OpenSSL.</p>
 
-</body>
-
-
-
-
-
-<head>
-    <title>Generating a Certificate Signing Request (CSR)</title>
-</head>
-
-<body>
-
 <h2>Section 2: Generating a Certificate Signing Request (CSR)</h2>
 
 <p>In this section, we will create a Certificate Signing Request (CSR) using OpenSSL. A CSR is a request for a digital certificate that includes your public key and essential information about your organization.</p>
@@ -109,19 +124,6 @@ cd keys</code></pre>
 
 <p>Now you have successfully generated a Certificate Signing Request (CSR) and can review its content. The CSR is a crucial step in obtaining a digital certificate for your server or application.</p>
 
-</body>
-
-
-
-
-
-
-<head>
-    <title>Converting Certificate Formats</title>
-</head>
-
-<body>
-
 <h2>Section 3: Converting Certificate Formats</h2>
 
 <p>In this section, we will explore how to convert certificate formats using OpenSSL. Converting between formats is often necessary for compatibility with different systems or applications.</p>
@@ -143,10 +145,5 @@ cd keys</code></pre>
 <p>You've now learned how to generate a self-signed certificate and convert it into a different format (".pfx"). This flexibility in format conversion is valuable for various deployment scenarios and system compatibility.</p>
 
 </body>
-
-</html>
-
-
-
 
 </html>

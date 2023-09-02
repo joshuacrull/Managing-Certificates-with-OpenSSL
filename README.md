@@ -10,7 +10,7 @@
 <p>Inside this repository, you'll find a comprehensive guide with step-by-step instructions, code samples, and practical examples. We'll use Kali Linux as our virtual environment, incorporating languages like Bash, OpenSSL commands, and relevant libraries. Whether you're a cybersecurity enthusiast or looking to enhance your digital security skills, this lab will equip you with valuable certificate management expertise using OpenSSL.</p>
 
 
-##Section 1: Generating Public and Private Keys
+<h2>Section 1: Generating Public and Private Keys</h2>h2>
 
 In this section, we will generate an asymmetric RSA key pair using OpenSSL.
 
@@ -39,7 +39,7 @@ You've now successfully generated an RSA key pair, obtained the private key, and
 
 
 
-Section 2: Generating a Certificate Signing Request (CSR)
+<h2>Section 2: Generating a Certificate Signing Request (CSR)</h2>
 In this section, we will create a Certificate Signing Request (CSR) using OpenSSL. A CSR is a request for a digital certificate that includes your public key and essential information about your organization.
 
 1. To generate the CSR, use the following command:
@@ -56,7 +56,7 @@ In this section, we will create a Certificate Signing Request (CSR) using OpenSS
 
 Now you have successfully generated a Certificate Signing Request (CSR) and can review its content. The CSR is a crucial step in obtaining a digital certificate for your server or application.
 
-Section 3: Converting Certificate Formats
+<h2>Section 3: Converting Certificate Formats</h2>h2>
 In this section, we will explore how to convert certificate formats using OpenSSL. Converting between formats is often necessary for compatibility with different systems or applications.
 
 1. To generate a self-signed certificate, run the following command:

@@ -132,18 +132,4 @@ cd keys</code></pre>
     <li>
         <p>To generate a self-signed certificate, run the following command:</p>
 
-        <pre><code>"Generating a self-signed certificate" openssl req -newkey rsa:2048 -nodes -keyout corp.515support.com.key -x509 -days 100 -out corp.515support.com.crt</code></pre>
-    </li>
-
-    <li>
-        <p>To merge the ".key" and ".crt" files into a ".pfx" (PKCS #12) file, use this command:</p>
-
-        <pre><code>"Merging .key and .crt files into a .pfx file" openssl pkcs12 -export -name "corp.515support.com" -out corp.515support.com.pfx -inkey corp.515support.com.key -in corp.515support.com.crt</code></pre>
-    </li>
-</ol>
-
-<p>You've now learned how to generate a self-signed certificate and convert it into a different format (".pfx"). This flexibility in format conversion is valuable for various deployment scenarios and system compatibility.</p>
-
-</body>
-
-</html>
+        <pre><code

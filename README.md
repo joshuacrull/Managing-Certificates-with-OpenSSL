@@ -10,7 +10,7 @@
 <p>Inside this repository, you'll find a comprehensive guide with step-by-step instructions, code samples, and practical examples. We'll use Kali Linux as our virtual environment, incorporating languages like Bash, OpenSSL commands, and relevant libraries. Whether you're a cybersecurity enthusiast or looking to enhance your digital security skills, this lab will equip you with valuable certificate management expertise using OpenSSL.</p>
 
 
-<h2>Section 1: Generating Public and Private Keys</h2>h2>
+<h2>Section 1: Generating Public and Private Keys</h2>
 
 In this section, we will generate an asymmetric RSA key pair using OpenSSL.
 
@@ -44,28 +44,29 @@ In this section, we will create a Certificate Signing Request (CSR) using OpenSS
 
 1. To generate the CSR, use the following command:
    
-   "Generating signing certificate" openssl req -new -key corp.515support.com.key -out corp.515support.com.csr
+   - openssl req -new -key corp.515support.com.key -out corp.515support.com.csr
 
-2. You can verify the content of the CSR with this command:
-   
-   "Verify the certificate request" openssl req -text -in corp.515support.com.csr -noout -verify
+2. You can verify the certificate request with this command:
+   - openssl req -text -in corp.515support.com.csr -noout -verify
 
-3. To view the CSR that would be sent to the certificate authority, use the following command:
+4. To view the CSR that would be sent to the certificate authority, use the following command:
    
-   "Display the certificate signing request that would be sent to the certificate authority" cat corp.515support.com.csr
+   - cat corp.515support.com.csr
 
 Now you have successfully generated a Certificate Signing Request (CSR) and can review its content. The CSR is a crucial step in obtaining a digital certificate for your server or application.
+
+
 
 <h2>Section 3: Converting Certificate Formats</h2>h2>
 In this section, we will explore how to convert certificate formats using OpenSSL. Converting between formats is often necessary for compatibility with different systems or applications.
 
 1. To generate a self-signed certificate, run the following command:
    
-   "Generating a self-signed certificate" openssl req -newkey rsa:2048 -nodes -keyout corp.515support.com.key -x509 -days 100 -out corp.515support.com.crt
+   - openssl req -newkey rsa:2048 -nodes -keyout corp.515support.com.key -x509 -days 100 -out corp.515support.com.crt
 
 2. To merge the ".key" and ".crt" files into a ".pfx" (PKCS #12) file, use this command:
    
-   "Merging .key and .crt files into a .pfx file" openssl pkcs12 -export -name "corp.515support.com" -out corp.515support.com.pfx -inkey corp.515support.com.key -in corp.515support.com.crt
+   - openssl pkcs12 -export -name "corp.515support.com" -out corp.515support.com.pfx -inkey corp.515support.com.key -in corp.515support.com.crt
 
 You've now learned how to generate a self-signed certificate and convert it into a different format (".pfx"). This flexibility in format conversion is valuable for various deployment scenarios and system compatibility.
 

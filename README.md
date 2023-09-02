@@ -36,8 +36,8 @@
         
         <li><b>Finally, you can view the content of the public key using the "cat" command:</b></li>
         <code>cat corp.515support.com_public.key</code>
-    </ol>
-</ul>
+</ol>
+
 
 <p><b>You've now successfully generated an RSA key pair, obtained the private key, and extracted the public key. These keys are fundamental to secure communication and certificate management in OpenSSL.</b></p>
 

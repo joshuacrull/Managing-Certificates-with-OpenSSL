@@ -20,19 +20,19 @@ In this section, we will generate an asymmetric RSA key pair using OpenSSL.
    - cd keys 
 
 2. Now, let's generate an Asymmetric RSA key pair. The following command will create a private key named "corp.515support.com.key" with a key length of 2048 bits.    
-   openssl genrsa -out corp.515support.com.key 2048
+   - openssl genrsa -out corp.515support.com.key 2048
 
 3. To view the content of the private key you just generated, you can use the "cat" command:    
-   cat corp.515support.com.key
+   - cat corp.515support.com.key
 
 4. Next, we'll extract the corresponding public key from the private key. This public key will be used when generating a Certificate Signing Request (CSR) in a later section.    
-   openssl rsa -in corp.515support.com.key -pubout -out corp.515support.com_public.key
+   - openssl rsa -in corp.515support.com.key -pubout -out corp.515support.com_public.key
 
 5. To verify that both the private and public keys have been generated and saved successfully, you can list the files in the current directory:    
-   ls
+   - ls
 
 6. Finally, you can view the content of the public key using the "cat" command:    
-   cat corp.515support.com_public.key
+   - cat corp.515support.com_public.key
 
 You've now successfully generated an RSA key pair, obtained the private key, and extracted the public key. These keys are fundamental to secure communication and certificate management in OpenSSL.
 

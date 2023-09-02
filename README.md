@@ -18,44 +18,24 @@
 
     <li><b>In this section, we will generate an asymmetric RSA key pair using OpenSSL. This pair includes a private key and a public key, which are essential for secure communication and certificate generation.</b></li>
        <ol>
-           <li> <b>First, navigate to your "Documents" directory and create a new directory named "keys" if it doesn't already exist. This is where we will store our generated keys.</p>
-       <code>cd Documents</code>
-       <code>mkdir keys</code>
-       <code>cd keys</code>
-    </li>
+           <li> <b>First, navigate to your "Documents" directory and create a new directory named "keys" if it doesn't already exist. This is where we will store our generated keys.</b></li>
+           <code>cd Documents</code>
+           <code>mkdir keys</code>
+           <code>cd keys</code>
+           
+           <li><b>Now, let's generate an RSA key pair. The following command will create a private key named "corp.515support.com.key" with a key length of 2048 bits.</b></li
+           <code>"Generate a Asymmetric encryption RSA key pair" openssl genrsa -out corp.515support.com.key 2048</code>
+           <li><b>To view the content of the private key you just generated, you can use the "cat" command:</b></li>
+           <code>"Display the private key" cat corp.515support.com.key</code>
+           <li><b>Next, we'll extract the corresponding public key from the private key. This public key will be used when generating a Certificate Signing Request (CSR) in a later section.</b></li
+           <code>"Extract the public key file to a file for export with CSR" openssl rsa -in corp.515support.com.key -pubout -out corp.515support.com_public.key</code>
+           <li><b>To verify that both the private and public keys have been generated and saved successfully, you can list the files in the current directory:</b></li>
+           <code>ls</code>
+           <li><b>Finally, you can view the content of the public key using the "cat" command:</b></li>
+           <code>"Display the public key" cat corp.515support.com_public.key</code>
+        </ol>
 
-    <li>
-        <p>Now, let's generate an RSA key pair. The following command will create a private key named "corp.515support.com.key" with a key length of 2048 bits.</p>
-
-        <code>"Generate a Asymmetric encryption RSA key pair" openssl genrsa -out corp.515support.com.key 2048</code>
-    </li>
-
-    <li>
-        <p>To view the content of the private key you just generated, you can use the "cat" command:</p>
-
-       <code>"Display the private key" cat corp.515support.com.key</code>
-    </li>
-
-    <li>
-        <p>Next, we'll extract the corresponding public key from the private key. This public key will be used when generating a Certificate Signing Request (CSR) in a later section.</p>
-
-        <code>"Extract the public key file to a file for export with CSR" openssl rsa -in corp.515support.com.key -pubout -out corp.515support.com_public.key</code>
-    </li>
-
-    <li>
-        <p>To verify that both the private and public keys have been generated and saved successfully, you can list the files in the current directory:</p>
-
-      <code>ls</code>
-    </li>
-
-    <li>
-        <p>Finally, you can view the content of the public key using the "cat" command:</p>
-
-     <code>"Display the public key" cat corp.515support.com_public.key</code>
-    </li>
-</ol>
-
-<p>You've now successfully generated an RSA key pair, obtained the private key, and extracted the public key. These keys are fundamental to secure communication and certificate management in OpenSSL.</p>
+<li><b>You've now successfully generated an RSA key pair, obtained the private key, and extracted the public key. These keys are fundamental to secure communication and certificate management in OpenSSL.</b></li>
 
 
 

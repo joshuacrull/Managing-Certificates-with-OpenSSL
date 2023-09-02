@@ -19,8 +19,8 @@
        <ol>
            <li><b>First, navigate to your "Documents" directory and create a new directory named "keys" if it doesn't already exist. This is where we will store our generated keys.</b></li>
            <code>cd Documents</code>
-           <code>mkdir keys</code>
-           <code>cd keys</code>
+           <br><code>mkdir keys</code></br>
+           <br><code>cd keys</code></br>
            
            <li><b>Now, let's generate an Asymmetric RSA key pair. The following command will create a private key named "corp.515support.com.key" with a key length of 2048 bits.</b></li
            <code>openssl genrsa -out corp.515support.com.key 2048</code>
